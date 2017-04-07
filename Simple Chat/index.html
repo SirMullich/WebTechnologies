@@ -1,0 +1,45 @@
+<!-- 
+    Chat design and CSS was taken from https://code.tutsplus.com/tutorials/how-to-create-a-simple-web-based-chat-application--net-593 
+    Note: JS was written by me (Daulet), Farhat's initial code was used as basis for this project
+    -->
+
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="menu">
+          <p class="welcome">Welcome, <b><span></span></b></p>
+          <p class="logout"><a id="exit" href="#" onclick="closeWindow()">Exit Chat</a></p>
+          <div style="clear:both"></div>
+      </div>    
+      <div id="chatbox"></div>
+       
+      <!-- <form name="message" action=""> -->
+          <input name="usermsg" type="text" id="usermsg" size="63" />
+          <button type="button" class="btn btn-primary" id="sendbtn" onclick="sendMessage()">Send</button>
+      <!-- </form> -->
+    </div>
+
+    <div class="clearStorage">
+      <button type="button" class="btn btn-warning" onclick="space.clear()">Clear All</button>
+    </div>
+    
+    <div class="debug"></div>
+
+    <!-- <div class="container">
+      <div class="content">
+        <div class="user-name">
+          Your name is: <span class="user-name-bold"></span>
+        </div>
+
+        <div class="other-users">
+        </div>
+      </div>
+    </div> -->
+  </body>
+</html>
