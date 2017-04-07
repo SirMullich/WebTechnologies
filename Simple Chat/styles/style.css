@@ -54,3 +54,8 @@ a {
 .logout { float:right; }
   
 .msgln { margin:0 0 2px 0; }
+
+.clearStorage 
+{
+    margin-top: 20px;
+}

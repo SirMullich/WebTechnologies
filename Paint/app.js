@@ -327,7 +327,7 @@ var run = function(canvas){
 
 	function redraw(){
 		var context = $('canvas')[0].getContext('2d');
-	  // context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
+	  // context.clearRect(0, 0, context.canvas.width, context.canvas.height);
 	  
 	  // context.strokeStyle = "#df4b26";
 	  context.lineJoin = "round";
@@ -337,7 +337,7 @@ var run = function(canvas){
 	    if(clickDrag[i] && i){
 	      context.moveTo(clickX[i-1], clickY[i-1]);
 	     }else{
-	       context.moveTo(clickX[i]-1, clickY[i]);
+	       context.moveTo(clickX[i], clickY[i]);
 	     }
 	     context.lineTo(clickX[i], clickY[i]);
 	     context.closePath();
